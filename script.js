@@ -1,5 +1,5 @@
 // Assignment code here
-
+// arrays with different types of characters
 var alphabetLower = 'abcdefghijklmnopqrstuvwxyz'.split('');
 console.log(alphabetLower);
 
@@ -14,6 +14,7 @@ console.log(numeric);
 var SpecialChar = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~".split('');
 console.log(SpecialChar);
 
+//array for the password
 var firstArray = [];
 console.log(firstArray);
 
