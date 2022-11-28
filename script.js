@@ -18,11 +18,12 @@ console.log(SpecialChar);
 var firstArray = [];
 console.log(firstArray);
 
+//function to generate a password
 function generatePassword(){
   var charNumber = prompt("Choose the lenght of the password from 8 to 128");
   if (charNumber < 8 || charNumber > 128){
     window.alert("Please choose a valid lenght of the password");
-    generatePassword();
+    return;
     } else{
     console.log(charNumber);
     if (window.confirm("Do you want to include lowercase characters in the password?")) {
@@ -55,7 +56,7 @@ function generatePassword(){
     };
     if (charAll4.length===0){
       window.alert("To generate a password please choose at least one character type");
-      generatePassword();
+      return;
     } else {
       var word=('');
       for (let x = 0; x < charNumber; x++) {
@@ -67,8 +68,6 @@ function generatePassword(){
     };
   }; 
 }
-
-
 
 
 // Get references to the #generate element
